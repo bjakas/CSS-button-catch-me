@@ -1,0 +1,39 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: crimson;
+    font-family: 'Limelight', cursive;
+}
+button {
+    font-family: inherit;
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    color: blanchedalmond;
+    background-color: cadetblue;
+    font-size: 24px;
+    padding: 5px;
+    border: 30px double blanchedalmond;
+    transition: 
+        transform 1s ease-in-out;
+}
+button:hover {
+    transform: translate(10px, 300px) rotate(3turn) scale(0,0);
+}
+button:focus {
+    border: 10px dashed cadetblue;
+    background-color: blanchedalmond;
+    color: cadetblue;
+    border-radius: 0%;
+    width: 150px;
+    height: 100px;
+    padding: 5px;
+}
